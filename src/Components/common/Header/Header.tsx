@@ -1,13 +1,14 @@
 import React from 'react'
-
+import Button from '@mui/material/Button';
+import { createTheme } from '@mui/material';
 const Header = () => {
   return (
-    <div className='bg-blue'>
+    <div className='bg-dark'>
       <div className='container mx-auto grid-cols-3 grid'>
-        <div>here is logo</div>
-        <div>here is menu</div>
-        <div>
-          <button className='bg-blue-btn btn'>Log in</button>
+        <div>logo</div>
+        <div>menu</div>
+        <div className='flex'>
+          <Button variant='outlined' className='btn'>Log in</Button>
         </div>
       </div>
     </div>    
