@@ -1,0 +1,24 @@
+:root{ 
+    --dark-gray: #6F6E6C;
+}
+.headerMenuItem:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    width: 0.5px;
+    height: 25px;
+    background-color: var(--dark-gray);    
+    right: 0;
+    
+}
+.headerParentPage:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s all;
+    transform: translate(0);
+}
+.childPage {
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s all;
+    transform: translate(0 , 10px)
+}
