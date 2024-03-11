@@ -1,17 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import addNew from '../../../../../../assets/img/add_new.svg';
-import Assing from './components/Assing';
+import Assing from './components/assing/Assing';
 import Projects from './components/Projects';
 import AddNew from './components/AddNew';
+import { ProjectType } from './project_db';
 
-const Project:React.FC<{project: string}> = ({project}) => {
+const Project: React.FC<{projects: ProjectType}> = ({projects}) => {
   return (
     <div className='bg-dark rounded-lg pt-8 pl-12 pb-6 pr-2 text-left relative'>
-        <div className='text-lg mb-7'>{project}</div>
-        <Assing project={project} />
-        <Projects project={project} />
-        <AddNew project={project} />
+        <div className='text-lg mb-7'>{projects.title}</div>
+        <Assing project={projects.title} subtasks={projects.subtasks} />  
+        <Projects project="title" />
+        <AddNew project="title" />
     </div>
   )
 }
