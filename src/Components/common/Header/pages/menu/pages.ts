@@ -17,8 +17,8 @@ export const pages: SinglePage[] = [
       {id: 2 , name: 'Javascript' , link: '/projects/javascript'}
     ]},
     {id: 2 , name: "monitoring" , child: [
-      {id: 0 , name: 'Worklog' , link: '/users'},
-      {id: 1 , name: 'Users' , link: '/worklogs'},
+      {id: 0 , name: 'Worklog' , link: '/worklogs'},
+      {id: 1 , name: 'Users' , link: '/users'},
     ]}, 
     {id: 3 , name: "schedule" , link: '/schedule'}, // alternative for timeline Jira
     {id: 4 , name: "wiki" , link: '/wiki'}, // can be also a dropdown with docs such "WP Docs" , "PHP Docs" and so on
