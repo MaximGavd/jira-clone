@@ -3,8 +3,8 @@ import Header from './Components/common/Header/Header';
 import Footer from './Components/common/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/pages/Home/Home';
-import Users from "./Components/pages/Users/Users";
 import Worklogs from "./Components/pages/Worklogs/Worklogs";
+import UserPage from "./Components/pages/Users/UserPage";
 
 function App() {
   return (
@@ -12,10 +12,8 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/worklogs/:id" element={<Worklogs />} />
-
-        {/*  hey */}
+          <Route path="/users" element={<UserPage />} />
+          <Route path="/worklogs/:name" element={<Worklogs />} />
         </Routes>
     </div>
   );
