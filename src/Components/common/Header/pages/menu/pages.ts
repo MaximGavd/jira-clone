@@ -16,10 +16,7 @@ export const pages: SinglePage[] = [
       {id: 1 , name: 'PHP' , link: '/projects/php'},
       {id: 2 , name: 'Javascript' , link: '/projects/javascript'}
     ]},
-    {id: 2 , name: "monitoring" , child: [
-      {id: 0 , name: 'Worklog' , link: '/worklogs'},
-      {id: 1 , name: 'Users' , link: '/users'},
-    ]}, 
+    {id: 2 , name: "users" , link: '/users'}, // worklogs & activity ( by canvas and graph ) ,
     {id: 3 , name: "schedule" , link: '/schedule'}, // alternative for timeline Jira
     {id: 4 , name: "wiki" , link: '/wiki'}, // can be also a dropdown with docs such "WP Docs" , "PHP Docs" and so on
   ]
