@@ -1,9 +1,10 @@
 import React from 'react';
 import UsersSidebar from "./components/users-sidebar/UsersSidebar";
 import UsersOverview from "./components/users-overview/UsersOverview";
+import {Route, Routes} from "react-router-dom";
 
 
-const Users = () => {
+const UsersPage = () => {
     return (
         <div className="container mx-auto">
             <div className="text-2xl font-semibold text-dark mt-12">Users</div>
@@ -15,4 +16,4 @@ const Users = () => {
     );
 };
 
-export default Users;
+export default UsersPage;
